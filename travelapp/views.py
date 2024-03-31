@@ -36,6 +36,18 @@ def PackageView(request):
     else:
         return render(request,'package.html',{'form': form})
 
+from django.contrib.auth import logout
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
+
+def logout_view(request):
+    """
+    Log out the user and redirect to the login page.
+    """
+    logout(request)
+    return HttpResponseRedirect(reverse('home'))
+
 
 def registerView(request):
     if request.method=="POST":

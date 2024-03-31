@@ -7,6 +7,7 @@ from .forms import UserLoginForm
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('logout/', views.logout_view, name='logout'),
     path('', views.IndexView, name="home"),
     path('accounts/login/',LoginView.as_view(authentication_form=UserLoginForm),name="login_url"),
     path('register/',views.registerView,name="register_url"),

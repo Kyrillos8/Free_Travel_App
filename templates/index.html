@@ -3,7 +3,7 @@
 {% load static %}
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Free Travel</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static "css/styleone.css" %}">
   <link rel="stylesheet" href="{% static "css/style.css" %}">
@@ -22,7 +22,7 @@
         </div>
         <div class="top">
           <img class="logo" src="{% static "img/logo.png" %}" alt="">
-          <h1 class="title"><b>TRAVEL TRIP</b></h1>
+          <h1 class="title"><b>FREE TRAVEL</b></h1>
         </div>
         <a href="{% url 'package' %}">
         <div id="one"class="feature one shadow-lg p-2 rounded">
@@ -87,7 +87,7 @@
 <div class="main-one">
   <div class="container">
     <h1 class="display-4 f-title">F L I G H T S</h1><br><br>
-    <p class="f-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="f-para">Flights epitomize the modern marvel of human ingenuity, seamlessly connecting distant destinations with swift efficiency. Within hours, travelers traverse vast oceans and continents, transcending borders and cultures. From the moment of boarding, anticipation builds as passengers embark on a journey of exploration or reunion. In the sky, the world unfolds beneath, revealing stunning landscapes and cityscapes. Despite the occasional turbulence, the experience is a testament to human achievement and the pursuit of connection. With each flight, travelers embark on an odyssey of discovery and adventure.</p>
     <br>  <a href="{% url 'flights' %}" class="f-btn btn btn-primary">F L Y ! !</a><br>
 
   </div>
@@ -98,7 +98,11 @@
 <div class="main-two">
   <div class="container">
     <h1 class="display-4 h-title">H O T E L S</h1><br><br>
-    <p class="h-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="h-para">Hotels offer sanctuaries of comfort and convenience, catering to diverse needs and desires.
+       From luxurious resorts overlooking pristine beaches to cozy boutique inns nestled in bustling city centers, 
+       the spectrum of hospitality is vast. They serve as temporary homes, providing a refuge for weary travelers and a backdrop for unforgettable experiences. 
+       With amenities ranging from lavish spas to state-of-the-art fitness centers, hotels aim to pamper guests and enhance their stay.
+        Whether for business or leisure, these havens of hospitality promise relaxation,adventure.</p>
     <br> <div class="button-one">
 
      <a href="{% url 'hotels' %}" class="h-btn btn btn-primary">B O O K</a><br>
@@ -115,8 +119,11 @@
   <div class="container">
     <br><br>
   <h2 class="footer-title">About Us</h2>
-  <p class="footer-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <br><br><p class="footer-para copy">Copyright <ion-icon name="at-circle-outline"></ion-icon> traveltrip.org</p>
+  <p class="footer-para">A comprehensive travel website seamlessly merges the worlds of flights and hotels,
+     offering travelers a one-stop destination to plan their journeys. With user-friendly interfaces and extensive search capabilities,
+      these platforms empower users to compare prices, book accommodations, and secure flights,
+       simplifying the process of travel planning with efficiency and ease.</p>
+  <br><br><p class="footer-para copy">Copyright <ion-icon name="at-circle-outline"></ion-icon> freetravel.org</p>
   </div>
 </div>
   {% endblock %}

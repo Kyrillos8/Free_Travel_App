@@ -1,5 +1,7 @@
 {% extends 'index.html' %}
 {% block content %}
+<a href="{% url 'home' %}" class="btn btn-secondary">HOME</a>
+
 <div class="v">
   <div class="container"><br><br>
     <h1 class="pt">LOGIN</h1><br><br>
@@ -11,6 +13,8 @@
           {{form.as_p}}
       <br> <button class="btn btn-primary">L O G I N</button>
         </form>
+        <br>
+        <a href="{% url 'register_url' %}" class="btn btn-secondary">Register</a>
       </div>
     <div class="col-md-3"></div>
     </div>
